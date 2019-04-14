@@ -1,0 +1,203 @@
+[2019-04-14 21:26:58] local.ERROR: Command "make:migratrion" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migratrion\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php:639)
+[stacktrace]
+#0 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(233): Symfony\\Component\\Console\\Application->find('make:migratrion')
+#1 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /opt/lampp/htdocs/imageRecogApp/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-04-14 21:27:32] local.ERROR: Command "make:migratrion" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migratrion\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php:639)
+[stacktrace]
+#0 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(233): Symfony\\Component\\Console\\Application->find('make:migratrion')
+#1 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /opt/lampp/htdocs/imageRecogApp/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-04-14 21:38:26] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `USERS` add unique `users_name_unique`(`name`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `USERS` add unique `users_name_unique`(`name`)) at /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes at /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458)
+[stacktrace]
+#0 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `US...', Array, Object(Closure))
+#1 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('alter table `US...', Array, Object(Closure))
+#2 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `US...')
+#3 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(264): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(165): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('USERS', Object(Closure))
+#6 /opt/lampp/htdocs/imageRecogApp/database/migrations/2019_04_14_212743_create_schema.php(20): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(360): CreateSchema->up()
+#8 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateSchema), 'up')
+#10 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('/opt/lampp/htdo...', 2, false)
+#11 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(580): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /opt/lampp/htdocs/imageRecogApp/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-04-14 21:39:15] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'USERS' already exists (SQL: create table `USERS` (`id` int unsigned not null auto_increment primary key, `name` varchar(255) not null, `password` varchar(20) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'USERS' already exists (SQL: create table `USERS` (`id` int unsigned not null auto_increment primary key, `name` varchar(255) not null, `password` varchar(20) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'USERS' already exists at /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458)
+[stacktrace]
+#0 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('create table `U...', Array, Object(Closure))
+#1 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('create table `U...', Array, Object(Closure))
+#2 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(97): Illuminate\\Database\\Connection->statement('create table `U...')
+#3 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(264): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(165): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('USERS', Object(Closure))
+#6 /opt/lampp/htdocs/imageRecogApp/database/migrations/2019_04_14_212743_create_schema.php(20): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(360): CreateSchema->up()
+#8 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateSchema), 'up')
+#10 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('/opt/lampp/htdo...', 2, false)
+#11 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(580): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /opt/lampp/htdocs/imageRecogApp/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-04-14 21:39:35] local.ERROR: Command "migrate:drop" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate:drop\" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php:639)
+[stacktrace]
+#0 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(233): Symfony\\Component\\Console\\Application->find('migrate:drop')
+#1 /opt/lampp/htdocs/imageRecogApp/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /opt/lampp/htdocs/imageRecogApp/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /opt/lampp/htdocs/imageRecogApp/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
