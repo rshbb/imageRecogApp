@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
+Route::get('/',"main@login");
+Route::get('/signup',"main@signup");
+Route::get('/home',"main@mainPage");

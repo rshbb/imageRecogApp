@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="./include/bt/css/bootstrap.css"><?php /**PATH /opt/lampp/htdocs/imageRecogApp/resources/views/include/bootstrap.blade.php ENDPATH**/ ?>
