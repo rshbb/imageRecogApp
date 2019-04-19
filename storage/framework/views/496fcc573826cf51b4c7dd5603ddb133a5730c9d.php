@@ -25,7 +25,26 @@
                         
                     </div>
                 </div>
-            </nav>
+        </nav>
+        <div class = "row">
+            <div class="col"></div>
+            <div id = "form" class="col">
+                <form method="post" action="/auth">
+                    <div class="form-group">
+                        <label for="name">USERNAME</label>
+                        <input type="name" class="form-control" id="name" name = "name">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" class="form-control" id="pwd" name = "password">
+                    </div>    
+                    <button type="submit" class="btn btn-default" name = "login">LOGIN</button>
+                    <?php echo e(csrf_field()); ?>
+
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
         <?php echo $__env->make("include.footer", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </body>
 </html<?php /**PATH /opt/lampp/htdocs/imageRecogApp/resources/views/login.blade.php ENDPATH**/ ?>

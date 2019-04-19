@@ -9,8 +9,10 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
-
+*/ 
 Route::get('/',"main@login");
 Route::get('/signup',"main@signup");
-Route::get('/home',"main@mainPage");
+
+
+Route::post("/auth","crud@auth");
+Route::post("/reg","crud@register");

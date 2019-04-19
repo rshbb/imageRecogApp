@@ -16,4 +16,9 @@
             width: 100%;
             }
             .navbar-brand {float:none;}
+            #form{
+                    text-align: center;
+                    margin-top: 15vh;
+                }
         </style>
+        

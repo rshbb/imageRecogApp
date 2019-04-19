@@ -23,6 +23,7 @@ class CreateSchema extends Migration
             $table->integer("uid");
             $table->string("filePath");
             $table->text("result");
+            $table->timestamps();
         });
     }
     /**

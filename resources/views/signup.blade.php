@@ -25,7 +25,29 @@
                         
                     </div>
                 </div>
-            </nav>
+        </nav>       
+        <div class = "row">
+                <div class="col"></div>
+                <div id = "form" class="col">
+                    <form method="POST" action="\reg">
+                        <div class="form-group">
+                            <label for="name">USERNAME</label>
+                            <input type="name" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" class="form-control" id="pwd" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd2">RE-ENTER PASSWORD</label>
+                            <input type="password" class="form-control" id="pwd2" name="password2">
+                        </div>    
+                        <button type="submit" class="btn btn-default" name="register">REGISTER</button>
+                        {{ csrf_field() }}
+                    </form>
+                </div>
+                <div class="col"></div>
+        </div>
         @include("include.footer")
     </body>
 </html
