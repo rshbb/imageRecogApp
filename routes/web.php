@@ -14,5 +14,6 @@ Route::get('/',"main@login");
 Route::get('/signup',"main@signup");
 
 
-Route::post("/auth","crud@auth");
+Route::post("/auth","crud@auth")->middleware("checkExist");
 Route::post("/reg","crud@register");
+

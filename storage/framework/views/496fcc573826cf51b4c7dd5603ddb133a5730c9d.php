@@ -28,20 +28,30 @@
         </nav>
         <div class = "row">
             <div class="col"></div>
-            <div id = "form" class="col">
-                <form method="post" action="/auth">
-                    <div class="form-group">
-                        <label for="name">USERNAME</label>
-                        <input type="name" class="form-control" id="name" name = "name">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" class="form-control" id="pwd" name = "password">
+            <div id = "form">
+                <form method = "POST" action="/auth">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group" >
+                                <input type="text" class="form-control" placeholder="USERNAME" name = "name">
+                            </div>
+                        </div>
                     </div>    
+                    <?php if(@errors->any()): ?>
+                        <?php echo e($errors->first()); ?>
+
+                    <?php endif; ?>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="PASSWORD" name = "password">
+                            </div>
+                        </div>
+                    </div>
                     <button type="submit" class="btn btn-default" name = "login">LOGIN</button>
                     <?php echo e(csrf_field()); ?>
 
-                </form>
+                  </form>
             </div>
             <div class="col"></div>
         </div>

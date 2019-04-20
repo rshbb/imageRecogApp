@@ -14,4 +14,7 @@ class main extends Controller{
     public function mainPage(){
         return view("landing");
     }
+    public function logout(){
+        return view("login");
+    }
 }

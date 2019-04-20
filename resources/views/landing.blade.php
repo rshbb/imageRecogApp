@@ -1,5 +1,11 @@
 @include("include.header")
     <title>LANDING</title>    
+    <style>
+        .card{
+            border:2px solid black;
+            width: 200px;
+        }
+    </style>
     </head>
     <body>
         <nav class="navbar navbar-horizontal navbar-expand-sm navbar-dark bg-default">
@@ -20,9 +26,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
                                     <a class="dropdown-item" href="#">UPLOAD</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">HISTORY</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./">Logout</a>
+                                    <button class="dropdown-item" href="/logout">Logout</button>
                                 </div>
                             </li>
                         </ul>
@@ -30,6 +34,25 @@
                     </div>
                 </div>
             </nav>
-        @include("include.footer")
+            <!-- Cards which stores previous images -->
+            <div class="container">
+                <div class = "row">
+                    <div class="card text-center">
+                        <img src="https://i.pinimg.com/originals/65/cb/86/65cb86f992b46bfa32d985e2f25d2a07.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Content</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                            <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                            <div class="card-text"> BADGES HERE</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            @include("include.footer")
     </body>
 </html
