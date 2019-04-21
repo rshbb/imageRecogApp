@@ -26,6 +26,7 @@
                     </div>
                 </div>
         </nav>
+        
         <div class = "row">
             <div class="col"></div>
             <div id = "form">
@@ -37,10 +38,6 @@
                             </div>
                         </div>
                     </div>    
-                    <?php if(@errors->any()): ?>
-                        <?php echo e($errors->first()); ?>
-
-                    <?php endif; ?>
                     <div class="row">
                         <div class="col">
                             <div class="form-group">

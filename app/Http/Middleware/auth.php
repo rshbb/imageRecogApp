@@ -17,11 +17,12 @@ class auth{
         $pass = $_POST["password"];
         $result = Users::where("name",'=',$name)->first();
         if(!$result){
-            //Need to do redirection here
+            //If user doesn't exist then redirect to home page
         }
         else if($result->password != $pass){
-            //Need to do redirection here as well
+            //If user enters wrong password then redirect to home page
         }
+        //Else proceed the flow of route
         return $next($request);
     }
 }

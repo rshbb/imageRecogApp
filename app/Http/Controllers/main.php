@@ -15,6 +15,10 @@ class main extends Controller{
         return view("landing");
     }
     public function logout(){
-        return view("login");
+        session()->forget("login");
+        return redirect("/");
+    }
+    public function upload(){
+        return "UPLOAD PAGE";
     }
 }

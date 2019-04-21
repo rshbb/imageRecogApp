@@ -24,9 +24,9 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
-                                    <a class="dropdown-item" href="#">UPLOAD</a>
+                                    <a class="dropdown-item" href="/upload">UPLOAD</a>
                                     <div class="dropdown-divider"></div>
-                                    <button class="dropdown-item" href="/logout">Logout</button>
+                                    <a class="dropdown-item" href="logout">Logout</a>
                                 </div>
                             </li>
                         </ul>
