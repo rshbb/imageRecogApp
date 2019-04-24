@@ -37,19 +37,20 @@
             <!-- Cards which stores previous images -->
             <div class="container">
                 <div class = "row">
-                    <div class="card text-center">
-                        <img src="https://i.pinimg.com/originals/65/cb/86/65cb86f992b46bfa32d985e2f25d2a07.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Title</h5>
-                            <p class="card-text">Content</p>
-                        </div>
-                    </div>
-                    <div class="card text-center">
-                            <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="" class="card-img-top">
-                            <div class="card-body">
-                            <div class="card-text"> BADGES HERE</div>
+                    <?php if(isset($images)): ?>
+                        <?php $__currentLoopData = $images; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $image): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <div class="card text-center">
+                                <img src="<?php echo e($dir.$image->filePath.'.'.$image->extension); ?>" alt="IMAGE" class="card-img-top">
+                                <div class="card-body">
+                                        <?php $__currentLoopData = explode(",",$image->result); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $str): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                            <div class="col">
+                                                <i class="badge badge-info"><?php echo e($str); ?></i>
+                                            </div>
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                </div>
                             </div>
-                    </div>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    <?php endif; ?>
                 </div>
             </div>
 

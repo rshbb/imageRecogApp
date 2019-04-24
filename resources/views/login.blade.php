@@ -30,7 +30,7 @@
         <div class = "row">
             <div class="col"></div>
             <div id = "form">
-                <form method = "POST" action="/auth">
+                <form method = "POST" action="/">
                     <div class="row">
                         <div class="col">
                             <div class="form-group" >

@@ -17,6 +17,6 @@ Route::get("/upload","main@upload")->middleware("checkLoggedIn");
 
 
 
-Route::post("/auth","crud@auth")->middleware("checkExist");
+Route::post("/","crud@auth")->middleware("checkExist");
 Route::post("/reg","crud@register");
-
+Route::post("/upld","crud@create"); 
