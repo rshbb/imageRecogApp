@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */ 
+
 Route::get('/',"main@login");
 Route::get('/signup',"main@signup");
 Route::get("/logout","main@logout");
